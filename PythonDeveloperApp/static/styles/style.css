@@ -8,7 +8,7 @@ body{
     display: flex;
     flex-direction: column;
     font-size: 20px;
-    background-color: black;
+    background-color: #1E213D;
     color: white;
 }
 
@@ -25,7 +25,7 @@ header::after{
     content: "";
     display: block;
     position: absolute;
-    width: 90%;
+    width: 75%;
     height: 1px;
     background-color: white;
     bottom: -10px;
@@ -57,7 +57,7 @@ footer::after{
     content: "";
     display: block;
     position: absolute;
-    width: 90%;
+    width: 75%;
     height: 1px;
     background-color: white;
     top: 0;
@@ -120,7 +120,7 @@ nav a.current{
 }
 
 .dataframe{
-    max-width: 100%;
+    width: 100%;
     border-collapse: collapse;
     margin: 0 auto;
 }
