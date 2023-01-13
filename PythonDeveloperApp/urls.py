@@ -8,7 +8,7 @@ urlpatterns = [
     path("demand/", views.demand),
     path("geography/", views.geography),
     path("skills/", views.skills),
-    path("last-vacancies/", views.last_vacancies)
+    path("last_vacancies/", views.last_vacancies)
 ]
 
 if settings.DEBUG:

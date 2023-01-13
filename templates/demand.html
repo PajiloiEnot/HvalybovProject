@@ -1,10 +1,33 @@
 <!DOCTYPE html>
+{% load static %}
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="{% static 'styles/style.css' %}">
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>HvalybovProject</title>
 </head>
 <body>
-
+<nav>
+    <ul>
+        <li><a href="/">Главная страница</a></li>
+        <li><a href="/demand" class="current">Востребованность</a></li>
+        <li><a href="/geography">География</a></li>
+        <li><a href="/skills">Навыки</a></li>
+        <li><a href="/last_vacancies">Последние вакансии</a></li>
+    </ul>
+</nav>
+<header>
+    <img src="{% static 'img/logo.jpg' %}" class="logo">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@400;600;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <h1 class="title">Python-developer</h1>
+</header>
+<main>
+</main>
+<footer>
+    <p>Хвалыбов Роман Алексеевич</p>
+    <p>РИ-210949</p>
+</footer>
 </body>
 </html>
