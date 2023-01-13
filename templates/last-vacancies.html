@@ -17,13 +17,27 @@
     </ul>
 </nav>
 <header>
-    <img src="{% static 'img/logo.jpg' %}" class="logo">
+    <img src="{% static 'img/logo.png' %}" class="logo">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@400;600;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <h1 class="title">Python-developer</h1>
 </header>
 <main>
+    <h2 class="subtitle">Последние вакансии</h2>
+    <ul class="vacancies-list">
+        {% for vacancy in vacancies_list %}
+    <ul class="vacancy">
+        <li class="name">{{ vacancy.name }}</li>
+        <li><b>Описание:</b> {{ vacancy.description }} <a class="view-next">...</a></li>
+        <li><b>Навыки:</b> {{ vacancy.key_skills }}</li>
+        <li><b>Компания:</b> {{ vacancy.employer }}</li>
+        <li><b>Оклад:</b> {{ vacancy.salary }}</li>
+        <li><b>Назване региона:</b> {{ vacancy.area_name }}</li>
+        <li><b>Дата публикации вакансии:</b> {{ vacancy.published_at }}</li>
+    </ul>
+    {% endfor %}
+    </ul>
 </main>
 <footer>
     <p>Хвалыбов Роман Алексеевич</p>
