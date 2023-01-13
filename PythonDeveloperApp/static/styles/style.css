@@ -49,6 +49,7 @@ footer{
 }
 
 img{
+    display: block;
     max-width: 100%;
 }
 
@@ -110,17 +111,23 @@ nav a.current{
 .page-title{
     text-align: center;
     font-size: 64px;
-    margin-bottom: 0;
+    margin-bottom: 30px;
+}
+
+.graph{
+    margin-bottom: 40px;
+    border-radius: 20px;
 }
 
 .dataframe{
+    max-width: 100%;
     border-collapse: collapse;
     margin: 0 auto;
 }
 
 .dataframe td, .dataframe th{
     text-align: center;
-    padding: 5px;
+    padding: 7px;
     font-size: 20px;
 }
 
